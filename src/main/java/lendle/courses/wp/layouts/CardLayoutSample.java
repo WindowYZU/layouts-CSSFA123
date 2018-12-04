@@ -68,6 +68,12 @@ public class CardLayoutSample {
                 layout.next(panel);
             }
         });
+        last.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                layout.last(panel);
+            }
+        });
         //////////////////////////////////////////////////////
 
         frame.setVisible(true);
